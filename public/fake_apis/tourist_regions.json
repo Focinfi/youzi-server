@@ -30,7 +30,7 @@
                         { "url": "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png" }
                     ],
                     "voice_url" : "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling.mp3",
-                    "video": "http://player.youku.com/embed/XMzgzMDgyNzI="
+                    "video_url": "http://player.youku.com/embed/XMzgzMDgyNzI="
                 },
                 {
                     "id": "2",
@@ -47,7 +47,7 @@
                         { "url": "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png" }
                     ],
                 "voice_url" : "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling.mp3",
-                "video": "http://player.youku.com/embed/XMzgzMDgyNzI="
+                "video_url": "http://player.youku.com/embed/XMzgzMDgyNzI="
                 }
             ]
         }     
