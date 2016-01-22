@@ -7,35 +7,26 @@ import (
 	"os"
 )
 
-var pwd, _ = os.Getwd()
+var goPath = os.Getenv("GOPATH")
 
-var developmentDir = pwd + "/public/fake_apis"
-
-const productionDir = "/home/youzi-server/public/fake_apis"
+var apisDir = goPath + "/src/github.com/Focinfi/youzi-server/public/fake_apis"
 
 func main() {
 
-	var dir, addr string
+	var addr string
 
 	if len(os.Args) == 1 {
-		dir = developmentDir
 		addr = ":3000"
-	} else if len(os.Args) == 3 {
-		mode := os.Args[1]
-		if mode == "production" {
-			dir = productionDir
-		}
-
-		ip := os.Args[2]
+	} else if len(os.Args) == 2 {
+		ip := os.Args[1]
 		if ip != "" {
 			addr = ip
 		}
 	} else {
-		panic("Setting will be has a develop mode and a ip.")
+		panic("Setting will be has only on param to points to ip.")
 	}
-	log.Println(os.Args, dir, addr)
 
-	faker, err := apifaker.NewWithApiDir(dir)
+	faker, err := apifaker.NewWithApiDir(apisDir)
 	if err != nil {
 		log.Fatal(err)
 	} else {
