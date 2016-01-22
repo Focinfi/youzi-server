@@ -16,6 +16,7 @@
             ],
             "Response": [
                 {
+                    "id": "1",
                     "name": "中山陵园风景区",
                     "level": "AAAAA",
                     "price": 0.00,
@@ -29,9 +30,10 @@
                         { "url": "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png" }
                     ],
                     "voice_url" : "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling.mp3",
-                    "vedio": "http://player.youku.com/embed/XMzgzMDgyNzI="
+                    "video": "http://player.youku.com/embed/XMzgzMDgyNzI="
                 },
                 {
+                    "id": "2",
                     "name": "中共代表团梅园新村纪念馆",
                     "level": "AAAA",
                     "price": 0.00,
@@ -45,7 +47,7 @@
                         { "url": "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png" }
                     ],
                 "voice_url" : "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling.mp3",
-                "vedio": "http://player.youku.com/embed/XMzgzMDgyNzI="
+                "video": "http://player.youku.com/embed/XMzgzMDgyNzI="
                 }
             ]
         }     
