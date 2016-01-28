@@ -1,86 +1,84 @@
 {
-    "Resource": "tourist_regions",
-    "Routes": [
+    "resource_name": "tourist_regions",
+    "columns": [
         {
-            "Method": "GET",
-            "Path": "/tourist_regions",
-            "Params": [
-                { 
-                    "name": "longtitude",
-                    "description": null
-                },
-                { 
-                    "name": "latitude",
-                    "description": null
-                }
-            ],
-            "Response": [
-                {
-                    "id": "1",
-                    "name": "中山陵园风景区",
-                    "level": "AAAAA",
-                    "price": 0.00,
-                    "location": "南京市玄武区石象路7号",
-                    "open_time": "08:30-17:00周一闭馆维护",
-                    "desc": "中山陵是中国近代伟大的民主革命先行者孙中山先生的陵寝，及其附属纪念建筑群，面积8万余平方米。中山陵自1926年春动工，至1929年夏建成，1961年成为首批全国重点文物保护单位，2006年列为首批国家重点风景名胜区和国家5A级旅游景区。<br>中山陵位于南京市玄武区紫金山南麓钟山风景区内，前临平川，背拥青嶂，东毗灵谷寺，西邻明孝陵，整个建筑群依山势而建，由南往北沿中轴线逐渐升高，主要建筑有博爱坊、墓道、陵门、石阶、碑亭、祭堂和墓室等，排列在一条中轴线上，体现了中国传统建筑的风格，从空中往下看，像一座平卧在绿绒毯上的“自由钟”。融汇中国古代与西方建筑之精华，庄严简朴，别创新格。<br>中山陵各建筑在型体组合、色彩运用、材料表现和细部处理上均取得极好的效果，音乐台、光华亭、流徽榭、仰止亭、藏经楼、行健亭、永丰社、永慕庐、中山书院等建筑众星捧月般环绕在陵墓周围，构成中山陵景区的主要景观，色调和谐统一更增强了庄严的气氛，既有深刻的含意，又有宏伟的气势，且均为建筑名家之杰作，极高的艺术价值，被誉为“中国近代建筑史上第一陵”。",
-                    "longitude": 118.8528011427,
-                    "latitude": 32.0586758184,
-                    "picture_urls": [
-                        "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png",
-                        "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png"
-                    ],
-                    "voice_url" : "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling.mp3",
-                    "video_url": "http://player.youku.com/embed/XMzgzMDgyNzI="
-                },
-                {
-                    "id": "2",
-                    "name": "中共代表团梅园新村纪念馆",
-                    "level": "AAAA",
-                    "price": 0.00,
-                    "location": "南京市玄武区汉府街18-1",
-                    "open_time": "09:00-17:00周一闭馆维护",
-                    "desc": "中共代表团梅园新村纪念馆，位于江苏省南京市城东长江路东端的梅园新村街道两侧，由中共代表团办事处旧址、国共南京谈判史料陈列馆、周恩来铜像、周恩来图书馆等组成，属于近现代历史遗迹及革命纪念建筑物。1946年5月至1947年3月，以周恩来为首的中国共产党代表团，在这里同国民党政府进行了10个月零4天的谈判。",
-                    "longitude": 118.8078860000,
-                    "latitude": 32.0485490000,
-                    "picture_urls": [
-                        "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png",
-                        "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png"
-                    ],
-                "voice_url" : "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling.mp3",
-                "video_url": "http://player.youku.com/embed/XMzgzMDgyNzI="
-                }
-            ]
+            "name": "name",
+            "type": "string",
+            "unique": true
         },
         {
-            "Method": "GET",
-            "Path": "/tourist_region/:id",
-            "Params": [
-                { 
-                    "name": "longtitude",
-                    "description": null
-                },
-                { 
-                    "name": "latitude",
-                    "description": null
-                }
+            "name": "level",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "number"
+        },
+        {
+            "name": "location",
+            "type": "string"
+        },
+        {
+            "name": "open_time",
+            "type": "string"
+        },
+        {
+            "name": "desc",
+            "type": "string"
+        },
+        {
+            "name": "longitude",
+            "type": "number"
+        },
+        {
+            "name": "latitude",
+            "type": "number"
+        },
+        {
+            "name": "picture_urls",
+            "type": "array"
+        },
+        {
+            "name": "voice_url",
+            "type": "string"
+        },
+        {
+            "name": "video_url",
+            "type": "string"
+        }
+    ],
+    "seeds": [
+        {
+            "name": "中山陵园风景区",
+            "level": "AAAAA",
+            "price": 0.00,
+            "location": "南京市玄武区石象路7号",
+            "open_time": "08:30-17:00周一闭馆维护",
+            "desc": "中山陵是中国近代伟大的民主革命先行者孙中山先生的陵寝，及其附属纪念建筑群，面积8万余平方米。中山陵自1926年春动工，至1929年夏建成，1961年成为首批全国重点文物保护单位，2006年列为首批国家重点风景名胜区和国家5A级旅游景区。<br>中山陵位于南京市玄武区紫金山南麓钟山风景区内，前临平川，背拥青嶂，东毗灵谷寺，西邻明孝陵，整个建筑群依山势而建，由南往北沿中轴线逐渐升高，主要建筑有博爱坊、墓道、陵门、石阶、碑亭、祭堂和墓室等，排列在一条中轴线上，体现了中国传统建筑的风格，从空中往下看，像一座平卧在绿绒毯上的“自由钟”。融汇中国古代与西方建筑之精华，庄严简朴，别创新格。<br>中山陵各建筑在型体组合、色彩运用、材料表现和细部处理上均取得极好的效果，音乐台、光华亭、流徽榭、仰止亭、藏经楼、行健亭、永丰社、永慕庐、中山书院等建筑众星捧月般环绕在陵墓周围，构成中山陵景区的主要景观，色调和谐统一更增强了庄严的气氛，既有深刻的含意，又有宏伟的气势，且均为建筑名家之杰作，极高的艺术价值，被誉为“中国近代建筑史上第一陵”。",
+            "longitude": 118.8528011427,
+            "latitude": 32.0586758184,
+            "picture_urls": [
+                "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png",
+                "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png"
             ],
-            "Response": {
-                "id": "1",
-                "name": "中山陵园风景区",
-                "level": "AAAAA",
-                "price": 0.00,
-                "location": "南京市玄武区石象路7号",
-                "open_time": "08:30-17:00周一闭馆维护",
-                "desc": "中山陵是中国近代伟大的民主革命先行者孙中山先生的陵寝，及其附属纪念建筑群，面积8万余平方米。中山陵自1926年春动工，至1929年夏建成，1961年成为首批全国重点文物保护单位，2006年列为首批国家重点风景名胜区和国家5A级旅游景区。<br>中山陵位于南京市玄武区紫金山南麓钟山风景区内，前临平川，背拥青嶂，东毗灵谷寺，西邻明孝陵，整个建筑群依山势而建，由南往北沿中轴线逐渐升高，主要建筑有博爱坊、墓道、陵门、石阶、碑亭、祭堂和墓室等，排列在一条中轴线上，体现了中国传统建筑的风格，从空中往下看，像一座平卧在绿绒毯上的“自由钟”。融汇中国古代与西方建筑之精华，庄严简朴，别创新格。<br>中山陵各建筑在型体组合、色彩运用、材料表现和细部处理上均取得极好的效果，音乐台、光华亭、流徽榭、仰止亭、藏经楼、行健亭、永丰社、永慕庐、中山书院等建筑众星捧月般环绕在陵墓周围，构成中山陵景区的主要景观，色调和谐统一更增强了庄严的气氛，既有深刻的含意，又有宏伟的气势，且均为建筑名家之杰作，极高的艺术价值，被誉为“中国近代建筑史上第一陵”。",
-                "longitude": 118.8528011427,
-                "latitude": 32.0586758184,
-                "picture_urls": [
-                    "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png",
-                    "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png"
-                ],
-                "voice_url" : "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling.mp3",
-                "video_url": "http://player.youku.com/embed/XMzgzMDgyNzI="
-            }
-        }     
+            "voice_url" : "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling.mp3",
+            "video_url": "http://player.youku.com/embed/XMzgzMDgyNzI="
+        },
+        {
+            "name": "中共代表团梅园新村纪念馆",
+            "level": "AAAA",
+            "price": 0.00,
+            "location": "南京市玄武区汉府街18-1",
+            "open_time": "09:00-17:00周一闭馆维护",
+            "desc": "中共代表团梅园新村纪念馆，位于江苏省南京市城东长江路东端的梅园新村街道两侧，由中共代表团办事处旧址、国共南京谈判史料陈列馆、周恩来铜像、周恩来图书馆等组成，属于近现代历史遗迹及革命纪念建筑物。1946年5月至1947年3月，以周恩来为首的中国共产党代表团，在这里同国民党政府进行了10个月零4天的谈判。",
+            "longitude": 118.8078860000,
+            "latitude": 32.0485490000,
+            "picture_urls": [
+                "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png",
+                "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png"
+            ],
+            "voice_url" : "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling.mp3",
+            "video_url": "http://player.youku.com/embed/XMzgzMDgyNzI="
+        }
     ]
 }
