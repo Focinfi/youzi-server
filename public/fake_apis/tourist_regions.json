@@ -2,6 +2,10 @@
     "resource_name": "tourist_regions",
     "columns": [
         {
+            "name": "id",
+            "type": "number"     
+        },
+        {
             "name": "name",
             "type": "string",
             "unique": true
@@ -45,10 +49,16 @@
         {
             "name": "video_url",
             "type": "string"
+        },
+        {
+            "name": "publisher",
+            "type": "object"
         }
     ],
+    "current_id": 3,
     "seeds": [
         {
+            "id": 1,
             "name": "中山陵园风景区",
             "level": "AAAAA",
             "price": 0.00,
@@ -62,9 +72,14 @@
                 "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png"
             ],
             "voice_url" : "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling.mp3",
-            "video_url": "http://player.youku.com/embed/XMzgzMDgyNzI="
+            "video_url": "http://player.youku.com/embed/XMzgzMDgyNzI=",
+            "publisher": {
+                "name": "Frank",
+                "publish_date": "2016-1-1"
+            }
         },
         {
+            "id": 2,
             "name": "中共代表团梅园新村纪念馆",
             "level": "AAAA",
             "price": 0.00,
@@ -78,7 +93,11 @@
                 "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling_01.png"
             ],
             "voice_url" : "http://7xq9t3.com1.z0.glb.clouddn.com/zhongshanling.mp3",
-            "video_url": "http://player.youku.com/embed/XMzgzMDgyNzI="
+            "video_url": "http://player.youku.com/embed/XMzgzMDgyNzI=",
+                        "publisher": {
+                "name": "Frank",
+                "publish_date": "2016-1-1"
+            }
         }
     ]
 }
