@@ -1,5 +1,6 @@
 {
     "resource_name": "tourist_regions",
+    "has_many":[ "comments" ],
     "columns": [
         {
             "name": "id",
@@ -51,7 +52,6 @@
             "type": "string"
         }
     ],
-    "current_id": 3,
     "seeds": [
         {
             "id": 1,

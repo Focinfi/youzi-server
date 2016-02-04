@@ -1,0 +1,41 @@
+{
+    "resource_name": "comments",
+    "columns": [
+        {
+            "name": "id",
+            "type": "number"     
+        },
+        {
+            "name": "content",
+            "type": "string"
+        },
+        {
+            "name": "tourist_region_id",
+            "type": "number"
+        },
+        {
+            "name": "user_name",
+            "type": "string"
+        },
+        {
+            "name": "date",
+            "type": "string"
+        }
+    ],
+    "seeds": [
+        {
+            "id": 1,
+            "content": "中山陵不愧是当代园陵建筑的典范！",
+            "tourist_region_id": 1,
+            "user_name": "在路上",
+            "date": "2015-10-20"
+        },
+        {
+            "id": 2,
+            "content": "梅园新村纪念馆见证了历史性事件。",
+            "tourist_region_id": 2,
+            "user_name": "希望就在前方",
+            "date": "2014-12-1"
+        }
+    ]
+}
